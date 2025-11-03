@@ -80,3 +80,7 @@ CMakeLists.txt.user*
 .rcc/
 .uic/
 /build*/
+
+# Test files and screenshots
+test_screenshot.py
+screenshot.png
