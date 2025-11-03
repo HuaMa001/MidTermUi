@@ -6,7 +6,7 @@ Qt UI Design Studio is a powerful visual design tool that enables designers and 
 
 ## Installation and Setup
 
-Qt UI Design Studio can be installed through the Qt Online Installer. After downloading from qt.io, launch the installer and select "Qt Design Studio" from the available components. The installation includes all necessary dependencies, including Qt libraries and pre-configured templates. Once installed, launch the application to begin creating your UI designs.
+Qt UI Design Studio can be installed through the Qt Online Installer. After downloading from qt.io, launch the installer and select "Qt UI Design Studio" from the available components. The installation includes all necessary dependencies, including Qt libraries and pre-configured templates. Once installed, launch the application to begin creating your UI designs.
 
 ## Interface Overview
 
@@ -24,7 +24,7 @@ Begin designing by dragging components from the Library panel onto the Form Edit
 
 ### Layout Management
 
-Qt Design Studio provides several layout types. **Column Layout** stacks items vertically, **Row Layout** arranges items horizontally, and **Grid Layout** creates a grid structure. Layouts automatically adjust to content and window size changes, ensuring responsive designs. Access layouts from the Library under "Qt Quick Layouts".
+Qt UI Design Studio provides several layout types. **Column Layout** stacks items vertically, **Row Layout** arranges items horizontally, and **Grid Layout** creates a grid structure. Layouts automatically adjust to content and window size changes, ensuring responsive designs. Access layouts from the Library under "Qt Quick Layouts".
 
 ### Styling and Theming
 
