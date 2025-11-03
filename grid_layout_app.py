@@ -55,7 +55,7 @@ class GridLayoutWindow(QMainWindow):
                     button = QPushButton(f'Button {button_count}')
                     button.setMinimumSize(100, 100)
                     button.setMaximumSize(100, 100)
-                    grid_layout.addWidget(button, row, col, Qt.AlignCenter)
+                    grid_layout.addWidget(button, row, col)
                 else:
                     # Create a spacer
                     spacer = QSpacerItem(100, 100, QSizePolicy.Fixed, QSizePolicy.Fixed)
