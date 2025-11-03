@@ -1,77 +1,77 @@
-# Qt UI Design Studio Usage Guide
+# Qt UI Design Studio 使用指南
 
-## Introduction
+## 簡介
 
-Qt UI Design Studio is a powerful visual design tool that enables designers and developers to create sophisticated user interfaces for Qt applications. It bridges the gap between design and development by allowing designers to work visually while generating production-ready code. This tool supports both Qt Quick (QML) and Qt Widgets, making it versatile for various application types.
+Qt UI Design Studio 是一個強大的視覺化設計工具，讓設計師和開發人員能夠為 Qt 應用程式建立精緻的使用者介面。它透過允許設計師以視覺化方式工作，同時產生可用於生產環境的程式碼，從而彌合了設計與開發之間的鴻溝。此工具同時支援 Qt Quick (QML) 和 Qt Widgets，使其能夠適用於各種應用程式類型。
 
-## Installation and Setup
+## 安裝與設定
 
-Qt UI Design Studio can be installed through the Qt Online Installer. After downloading from qt.io, launch the installer and select "Qt UI Design Studio" from the available components. The installation includes all necessary dependencies, including Qt libraries and pre-configured templates. Once installed, launch the application to begin creating your UI designs.
+Qt UI Design Studio 可以透過 Qt 線上安裝程式進行安裝。從 qt.io 下載後，啟動安裝程式並從可用元件中選擇「Qt UI Design Studio」。安裝程序包含所有必要的相依套件，包括 Qt 函式庫和預先設定的範本。安裝完成後，啟動應用程式即可開始建立您的 UI 設計。
 
-## Interface Overview
+## 介面概覽
 
-The main interface consists of several key panels. The **Navigator** panel displays your component hierarchy in tree form, allowing easy selection and organization of UI elements. The **Form Editor** provides a visual canvas where you can drag, drop, and arrange components. The **Library** panel contains all available QML types, components, and assets. The **Properties** panel shows editable properties for selected items, including positioning, styling, and behavior settings. The **States** panel manages different UI states, and the **Timeline** panel handles animations and transitions.
+主要介面由幾個關鍵面板組成。**導覽器（Navigator）** 面板以樹狀形式顯示您的元件階層，方便您輕鬆選擇和組織 UI 元素。**表單編輯器（Form Editor）** 提供一個視覺化畫布，讓您可以拖放和排列元件。**函式庫（Library）** 面板包含所有可用的 QML 類型、元件和資產。**屬性（Properties）** 面板顯示所選項目的可編輯屬性，包括定位、樣式和行為設定。**狀態（States）** 面板管理不同的 UI 狀態，而 **時間軸（Timeline）** 面板則處理動畫和轉場效果。
 
-## Creating Your First Project
+## 建立您的第一個專案
 
-Start by selecting "File > New Project" from the menu. Qt Design Studio offers various project templates including mobile applications, desktop applications, and embedded interfaces. Choose a template that matches your target platform. Provide a project name and location, then click "Create". The tool generates a project structure with necessary files including main.qml, configuration files, and asset directories.
+從選單中選擇「檔案 > 新專案」開始。Qt Design Studio 提供各種專案範本，包括行動應用程式、桌面應用程式和嵌入式介面。選擇符合您目標平台的範本。提供專案名稱和位置，然後按一下「建立」。此工具會產生一個包含必要檔案的專案結構，包括 main.qml、設定檔和資產目錄。
 
-## Designing the User Interface
+## 設計使用者介面
 
-### Working with Components
+### 使用元件
 
-Begin designing by dragging components from the Library panel onto the Form Editor canvas. Common components include Rectangle for containers, Text for labels, Button for user actions, TextField for input, and Image for graphics. Position elements using the mouse or by entering precise coordinates in the Properties panel.
+從函式庫面板將元件拖曳到表單編輯器畫布上，開始進行設計。常見元件包括用於容器的 Rectangle、用於標籤的 Text、用於使用者操作的 Button、用於輸入的 TextField 以及用於圖形的 Image。使用滑鼠或在屬性面板中輸入精確座標來定位元素。
 
-### Layout Management
+### 版面配置管理
 
-Qt UI Design Studio provides several layout types. **Column Layout** stacks items vertically, **Row Layout** arranges items horizontally, and **Grid Layout** creates a grid structure. Layouts automatically adjust to content and window size changes, ensuring responsive designs. Access layouts from the Library under "Qt Quick Layouts".
+Qt UI Design Studio 提供多種版面配置類型。**欄版面配置（Column Layout）** 垂直堆疊項目，**列版面配置（Row Layout）** 水平排列項目，而 **格線版面配置（Grid Layout）** 則建立格線結構。版面配置會自動調整以適應內容和視窗大小變更，確保響應式設計。可從函式庫的「Qt Quick Layouts」下存取版面配置。
 
-### Styling and Theming
+### 樣式與主題
 
-Customize component appearance through the Properties panel. Modify colors, fonts, borders, and opacity. Create reusable styles by defining custom components. The **Material** and **Universal** style sets provide pre-built themes following Material Design and Universal Design guidelines respectively.
+透過屬性面板自訂元件外觀。修改顏色、字型、邊框和不透明度。透過定義自訂元件來建立可重複使用的樣式。**Material** 和 **Universal** 樣式集分別提供遵循 Material Design 和 Universal Design 指南的預建主題。
 
-## States and Transitions
+## 狀態與轉場效果
 
-States allow your interface to change appearance based on different conditions. Click the States panel's plus icon to create a new state. Switch to that state and modify component properties. Qt Design Studio records these changes. Transitions define how the UI animates between states. Configure transition duration, easing curves, and animated properties in the Timeline panel.
+狀態允許您的介面根據不同條件改變外觀。按一下狀態面板的加號圖示以建立新狀態。切換到該狀態並修改元件屬性。Qt Design Studio 會記錄這些變更。轉場效果定義 UI 在狀態之間如何動畫化。在時間軸面板中設定轉場持續時間、緩動曲線和動畫屬性。
 
-## Animations
+## 動畫
 
-The Timeline panel enables complex animations. Create timeline animations by adding keyframes for component properties at specific time points. Adjust animation curves to control motion behavior. Animations can be triggered by user interactions or programmatically through code.
+時間軸面板可實現複雜的動畫。透過在特定時間點為元件屬性新增關鍵影格來建立時間軸動畫。調整動畫曲線以控制運動行為。動畫可以透過使用者互動或透過程式碼以程式方式觸發。
 
-## Assets Management
+## 資產管理
 
-Import assets by right-clicking the asset directory in the Project panel and selecting "Add New". Supported formats include PNG, JPG, SVG for images, and TTF for fonts. Qt Design Studio automatically optimizes assets for deployment. Reference imported assets in Image components or as component backgrounds.
+在專案面板中右鍵按一下資產目錄並選擇「新增」來匯入資產。支援的格式包括影像的 PNG、JPG、SVG，以及字型的 TTF。Qt Design Studio 會自動最佳化資產以供部署使用。在 Image 元件中或作為元件背景引用匯入的資產。
 
-## Preview and Testing
+## 預覽與測試
 
-Use the **Live Preview** feature to see your design running in real-time. Press the play button to launch preview mode. Interact with your interface to test user flows and animations. Live Preview updates automatically as you modify the design, enabling rapid iteration.
+使用 **即時預覽（Live Preview）** 功能即時查看您的設計執行狀況。按下播放按鈕以啟動預覽模式。與您的介面互動以測試使用者流程和動畫。即時預覽會在您修改設計時自動更新，實現快速迭代。
 
-## Code Integration
+## 程式碼整合
 
-Qt Design Studio generates clean QML code that developers can extend with JavaScript logic. View generated code by clicking the "Edit" button to open files in code view. While designers work visually, developers can add business logic, connect to backends, and implement complex interactions. The tool preserves custom code during design updates when using proper annotations.
+Qt Design Studio 產生簡潔的 QML 程式碼，開發人員可以使用 JavaScript 邏輯進行擴充。按一下「編輯」按鈕以在程式碼檢視中開啟檔案來檢視產生的程式碼。當設計師以視覺化方式工作時，開發人員可以新增商業邏輯、連接到後端，以及實作複雜的互動。在使用適當註解時，此工具會在設計更新期間保留自訂程式碼。
 
-## Working with Custom Components
+## 使用自訂元件
 
-Create reusable components by selecting UI elements and choosing "Component > Create Component". Give the component a name and save it. Custom components appear in the Library under "My Components" and can be reused across your project. This promotes consistency and speeds up development.
+透過選擇 UI 元素並選擇「元件 > 建立元件」來建立可重複使用的元件。為元件命名並儲存。自訂元件會顯示在函式庫的「我的元件」下，並可在整個專案中重複使用。這促進了一致性並加快了開發速度。
 
-## Best Practices
+## 最佳實務
 
-**Organize Your Project**: Use meaningful names for components and maintain a clear hierarchy in the Navigator panel. Group related elements under container components.
+**組織您的專案**：為元件使用有意義的名稱，並在導覽器面板中維護清晰的階層結構。將相關元素分組到容器元件下。
 
-**Use Layouts**: Prefer layouts over absolute positioning for responsive designs that adapt to different screen sizes and orientations.
+**使用版面配置**：對於能夠適應不同螢幕尺寸和方向的響應式設計，請優先使用版面配置而非絕對定位。
 
-**Leverage States**: Rather than duplicating screens, use states to represent different UI configurations of the same component.
+**善用狀態**：不要重複螢幕，而是使用狀態來表示相同元件的不同 UI 配置。
 
-**Optimize Assets**: Use appropriately sized images and prefer vector formats (SVG) when possible for better scaling and smaller file sizes.
+**最佳化資產**：使用適當大小的影像，並在可能的情況下優先使用向量格式（SVG），以獲得更好的縮放效果和更小的檔案大小。
 
-**Test Early**: Regularly preview your design to catch layout issues and interaction problems early in the development process.
+**及早測試**：定期預覽您的設計，以在開發過程早期發現版面配置問題和互動問題。
 
-**Collaborate**: Qt Design Studio's file format is text-based QML, making it version-control friendly. Use Git or other VCS for team collaboration.
+**協作**：Qt Design Studio 的檔案格式是基於文字的 QML，使其易於進行版本控制。使用 Git 或其他版本控制系統進行團隊協作。
 
-## Exporting and Deployment
+## 匯出與部署
 
-Once your design is complete, the project is ready for integration into a Qt application. Qt Design Studio projects can be opened directly in Qt Creator for additional development. For handoff to developers, export your design as a package containing all QML files and assets. The generated code integrates seamlessly with Qt's build system (qmake or CMake).
+一旦您的設計完成，專案就準備好整合到 Qt 應用程式中。Qt Design Studio 專案可以直接在 Qt Creator 中開啟以進行額外開發。要交付給開發人員，請將您的設計匯出為包含所有 QML 檔案和資產的套件。產生的程式碼可與 Qt 的建置系統（qmake 或 CMake）無縫整合。
 
-## Conclusion
+## 結論
 
-Qt UI Design Studio streamlines the UI creation process by providing designers with a visual interface while generating developer-friendly code. Its comprehensive feature set supports the entire design workflow from initial mockups to production-ready interfaces. By mastering its tools and following best practices, teams can create beautiful, responsive Qt applications efficiently.
+Qt UI Design Studio 透過為設計師提供視覺化介面，同時產生對開發人員友善的程式碼，從而簡化了 UI 建立過程。其全面的功能集支援從初始原型到可用於生產環境的介面的整個設計工作流程。透過掌握其工具並遵循最佳實務，團隊可以有效率地建立美觀、響應式的 Qt 應用程式。
